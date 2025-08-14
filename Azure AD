@@ -5,7 +5,7 @@ ROADtools, AadInternals, and MicroBurst
 Attack Vector	                Active Directory	Azure Active Directory
 
 Pass-the-Hash                      	✅	                ❌
-Kerberoasting	                      ✅	                ❌
+Kerberoasting	                     ✅	                ❌
 AS-REP Roasting	                    ✅                	❌
 Token Hijacking (OAuth)	            ❌                	✅
 Consent Phishing	                  ❌                	✅
