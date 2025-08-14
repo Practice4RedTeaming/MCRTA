@@ -1,2 +1,14 @@
 Azure AD Pentesting Tools:
 ROADtools, AadInternals, and MicroBurst
+
+
+Attack Vector	                Active Directory	Azure Active Directory
+Pass-the-Hash                      	✅	                ❌
+Kerberoasting	                      ✅	❌
+AS-REP Roasting	                    ✅	❌
+Token Hijacking (OAuth)	            ❌	✅
+Consent Phishing	                  ❌	✅
+Overprivileged Service Principals	  ❌	✅
+GPO Abuse	                          ✅	❌
+Conditional Access Bypass	          ❌	✅
+Guest Account Enumeration	          ❌	✅
