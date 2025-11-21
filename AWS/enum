@@ -1,6 +1,34 @@
-> aws configure --profile auditor  [Use the profile if we have more than one credentials]
+> aws configure --profile auditor  [Use the profile if we have more than one credentials;]
 >>>Enter AWS AccessKeyID and AWS Secret Access Key
 
-The Access Key ID Starting with AKI is long term key. The Access key ID with ASI is short term key
+The Access Key ID Starting with AKI is long term key. The Access key ID starting with ASI is short term key
 
-> 
+> aws sts get-caller-identity --profile auditor
+Lists the identity to which this account [Access Key] belongs
+
+> aws iam list-users --profile auditor
+Lists all the users from IAM
+
+> aws iam list-groups --profile auditor
+
+> aws iam get-group --group-name --profile auditor 
+
+> aws iam list-attached-group-policies --group-name groupName --profile auditor
+[Managed Policies]
+
+> aws iam list-group-policies --group-name groupName --profile auditor
+[Inline Policies]
+
+> aws list-groups-for-user --user-name Auditor --profile auditor
+Lists the group to which the user belongs
+----------------------------------------------------------------------------------------------------
+
+Two types of policies [Managed Policies and Inline Policies]
+
+> aws iam list-attached-user-profiles --user-name Auditor --profile auditor
+List the managed policy attached to a user
+
+> > aws iam list-user-profiles --user-name Auditor --profile auditor
+List the inline policy attached to a user
+
+[Roles can only be assigned to Compute Resources]
