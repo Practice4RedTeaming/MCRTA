@@ -31,4 +31,41 @@ List the managed policy attached to a user
 > > aws iam list-user-profiles --user-name Auditor --profile auditor
 List the inline policy attached to a user
 
+----------------------------------------------------------------------------------------------------
 [Roles can only be assigned to Compute Resources]
+> aws iam list-roles --profile auditor
+
+> aws iam list-attached-role-policies --role-name Admin-role-for...? --profile auditor
+[Managed Policies]
+
+> aws iam list-role-policies --role-name
+[Inline Policies]
+
+[[Deny Permissions/Policies take preference over allow preference/policy]]
+---------------------------------------------------------------------------------------------------
+[[ Policies are of two types AWS managed policies and customer managed policies]]
+
+> aws iam list policies --profile auditor
+[[ If arn does not contain the ID it is customer Managed Policy]]
+[[ AWS Managed policy does not contain any id in the policy arn]]
+
+> aws iam get-policy --policy-arn arn:aws::98?989:policy/assume.... --profile auditor
+
+> aws iam list-policy-versions --policy-arn arnOfThePolicy --profile auditor
+
+
+> aws iam get-policy-version --policy-arn arn:aws:policy/Cloud... --version-id v1/? --profile auditor
+
+> aws iam list-role-policies --role-name admin-role... --profile auditor
+
+> aws iam get-role-policy --role-name Admin-role... --policy-name policyname? --profile
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
