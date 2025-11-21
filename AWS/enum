@@ -1,0 +1,6 @@
+> aws configure --profile auditor  [Use the profile if we have more than one credentials]
+>>>Enter AWS AccessKeyID and AWS Secret Access Key
+
+The Access Key ID Starting with AKI is long term key. The Access key ID with ASI is short term key
+
+> 
