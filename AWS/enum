@@ -34,6 +34,8 @@ List the inline policy attached to a user
 ----------------------------------------------------------------------------------------------------
 [Roles can only be assigned to Compute Resources]
 > aws iam list-roles --profile auditor
+> aws iam get-role --role-name <role-name>
+
 
 > aws iam list-attached-role-policies --role-name Admin-role-for...? --profile auditor
 [Managed Policies]
@@ -61,6 +63,7 @@ List the inline policy attached to a user
 > aws iam get-role-policy --role-name Admin-role... --policy-name policyname? --profile
 
 -------------------------------------------------------------------------------------------------------------------
+> aws ec2 describe-instances --profile auditor
 
 
 
